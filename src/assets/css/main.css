@@ -45,20 +45,24 @@
   display: flex;
   align-items: center;
   background-color: var(--color-negro);
-  overflow-x: hidden;
+  overflow-x: auto;
+}
+.header .banner::-webkit-scrollbar {
+  display: none;
 }
 .header .banner .banner-contenedor {
   width: 100%;
+  max-width: 100%;
   height: auto;
   display: flex;
-  align-items: center;
 }
 .header .banner .banner-contenedor .banner-logo {
   height: auto;
   display: flex;
   align-items: center;
+  justify-content: center;
   padding: 0.5rem 0;
-  animation: desplazamiento 8s linear infinite;
+  animation: desplazamiento 8s infinite linear;
 }
 .header .banner .banner-contenedor .banner-logo .banner-img {
   width: 40px;
