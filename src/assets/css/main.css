@@ -1,0 +1,90 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+:root {
+  /* --- Fuentes ---*/
+  --font-family-inter: 'Inter', sans-serif;
+  --font-family-montserrat: 'Montserrat', sans-serif;
+  --font-family-roboto: 'Roboto', sans-serif;
+  --font-size-small: .875rem;
+  --font-size-medium: 1rem;
+  --font-size-large: 1.25rem;
+  --font-title: clamp(2rem, 5vw, 3.5rem);
+  --font-subtitle: clamp(1.25rem, 3vw, 1.5rem);
+  --font-h1: clamp(3.5rem, 7vw, 4.5rem);
+  --font-h2: clamp(2.5rem, 5vw, 3.5rem);
+  --font-weight-light: 200;
+  --font-weight-regular: 400;
+  --font-weight-medium: 700;
+  --font-weight-bold: 900;
+  /* --- Colores ---*/
+  --color-negro: #000000;
+  --color-blanco: #fff;
+  --color-gris-claro: #f2f2f2;
+  --color-gris-oscuro: #f7f7f7;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: var(--font-family-inter);
+}
+
+.header {
+  width: 100%;
+  height: auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+}
+.header .banner {
+  width: 100%;
+  height: auto;
+  grid-column: 1/span 3;
+  display: flex;
+  align-items: center;
+  background-color: var(--color-negro);
+  overflow-x: hidden;
+}
+.header .banner .banner-contenedor {
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-items: center;
+}
+.header .banner .banner-contenedor .banner-logo {
+  height: auto;
+  display: flex;
+  align-items: center;
+  padding: 0.5rem 0;
+  animation: desplazamiento 8s linear infinite;
+}
+.header .banner .banner-contenedor .banner-logo .banner-img {
+  width: 40px;
+  height: 40px;
+  -o-object-fit: contain;
+     object-fit: contain;
+  padding: 0.25rem;
+  margin: 0 0.8rem;
+}
+.header .banner .banner-contenedor .banner-logo .banner-texto {
+  color: var(--color-blanco);
+  font-family: var(--font-family-montserrat);
+  font-size: var(--font-subtitle);
+  font-weight: var(--font-weight-medium);
+}
+.header .banner .banner-contenedor .banner-logo .banner-texto span {
+  font-size: 2rem;
+  margin: 0 0.25rem 0 0;
+  font-style: italic;
+  font-weight: var(--font-weight-regular);
+}
+@keyframes desplazamiento {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}/*# sourceMappingURL=main.css.map */

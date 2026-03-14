@@ -1,0 +1,73 @@
+@import './fonts.scss';
+@import './variables.scss';
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--font-family-inter);
+}
+
+.header {
+    width: 100%;
+    height: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+
+    .banner {
+        width: 100%;
+        height: auto;
+        grid-column: 1 / span 3;
+        display: flex;
+        align-items: center;
+        background-color: var(--color-negro);
+        overflow-x: hidden;
+
+        .banner-contenedor {
+            width: 100%;
+            height: auto;
+            display: flex;
+            align-items: center;
+
+            .banner-logo {
+                height: auto;
+                display: flex;
+                align-items: center;
+                padding: 0.5rem 0;
+                animation: desplazamiento 8s linear infinite;
+
+                .banner-img{
+                    width: 40px;
+                    height: 40px;
+                    object-fit: contain;
+                    padding: .25rem;
+                    margin: 0 .8rem;
+                }
+                .banner-texto{
+                    color: var(--color-blanco);
+                    font-family: var(--font-family-montserrat);
+                    font-size: var(--font-subtitle);
+                    font-weight: var(--font-weight-medium);
+
+                    span{
+                        font-size: 2rem;
+                        margin: 0 .25rem 0 0;
+                        font-style: italic;
+                        font-weight: var(--font-weight-regular);
+                    }
+                }
+
+                @keyframes desplazamiento {
+                    from{
+                        transform: translateX(0);
+                    }
+                    to{
+                        transform: translateX(-100%);
+                    }
+                }
+            }
+        }
+    }
+}
