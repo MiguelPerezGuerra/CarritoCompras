@@ -13,3 +13,16 @@ function copiarBanner() {
 }
 
 export { copiarBanner };
+
+// -- Descripcion: 
+
+const btnMenu = document.querySelector('.nav__toggle');
+
+btnMenu.addEventListener('click', () => {
+    const navActivo = document.querySelector('.nav__activo');
+    const navClose = document.querySelector('.nav__close');
+    const navItems = document.querySelector('#nav-list');
+    navActivo.classList.toggle('activo');
+    navClose.classList.toggle('activo');
+    navItems.classList.toggle('activo');
+});
