@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,6 +10,7 @@
     <link rel="shortcut icon" href="./src/assets/img/Logo.ico" type="image/x-icon">
     <title>Indenpendiente - Shop Vinyl</title>
 </head>
+
 <body>
 
     <header class="header">
@@ -24,16 +26,16 @@
 
         <!-- Menú principal con botón de toggle -->
         <nav class="nav" aria-label="Menú principal">
-          <button class="nav__toggle" aria-expanded="false" aria-controls="nav-list">
-            <span class="nav__activo">Menú</span>
-            <span aria-hidden="true" class="nav__close activo">Cerrar</span>
-          </button>
+            <button class="nav__toggle" aria-expanded="false" aria-controls="nav-list">
+                <span class="nav__activo">Menú</span>
+                <span aria-hidden="true" class="nav__close activo">Cerrar</span>
+            </button>
 
-          <ul class="nav__list activo" id="nav-list">
-            <li class="nav__item"><a href="#">Home</a></li>
-            <li class="nav__item"><a href="#">Shop</a></li>
-            <li class="nav__item"><a href="#">Contact</a></li>
-          </ul>
+            <ul class="nav__list activo" id="nav-list">
+                <li class="nav__item"><a href="#">Home</a></li>
+                <li class="nav__item"><a href="#">Shop</a></li>
+                <li class="nav__item"><a href="#">Contact</a></li>
+            </ul>
         </nav>
 
         <!-- Logo -->
@@ -49,10 +51,72 @@
             </div>
         </section>
 
-
     </header>
 
+    <main class="main-contenedor">
+        <h1 class="encabezado">Shop Vinyl</h1>
+        <section class="tienda-contenedor">
+            <div class="tienda-data">
+                <p class="data-tipo">Shop Music / </p>
+                <span class="data-categoria">vinyl</span>
+            </div>
+            <section class="tienda-productos">
+                <article class="card">
+                    <div class="card-contenedor">
+                        <div class="card-titulo">
+                            <h3 class="card-titulo_categoria">vinyl</h3>
+                            <p class="card-titulo_stock">on sale</p>
+                        </div>
+                        <div class="card-img">
+                            <img src="./src/assets/img/img_vinilos/vinyl1.avif" alt="Portada dicco vinilo albun"
+                                class="card-img__producto">
+                        </div>
+                        <div class="card-info">
+                            <h2 class="card-info__nombre">Ramirez - THA PLAYA$ MANUAL ll</h2>
+                            <p class="card-info__precio">$35.00</p>
+                        </div>
+                        <a href="#" class="button-primario input agregar-carrito" data-id="1">Agregar a Carrito</a>
+
+                    </div>
+                </article>
+
+            </section>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <section class="footer-social">
+            <div class="logo-principal">
+                <img class="logo-principal__img" src="./src/assets/img/Logo_Negro.png" alt="Logo Empire Blanco">
+                <p class="logo-principal__text">EMPIRE</p>
+            </div>
+            <div class="footer-social__icons">
+                <p>Conctactame</p>
+                <a href="#" target="_blank" rel="noopener noreferrer"><i class="ri-github-fill"></i></a>
+                <a href="#" target="_blank" rel="noopener noreferrer"><i class="ri-whatsapp-fill"></i></a>
+                <a href="#" target="_blank" rel="noopener noreferrer"><i class="ri-instagram-line"></i></a>
+                <a href="#" target="_blank" rel="noopener noreferrer"><i class="ri-facebook-circle-fill"></i></a>
+            </div>
+        </section>
+
+        <section class="form-contenedor">
+            <form class="form">
+                <div class="form-grupo">
+                    <label for="email">@Email</label>
+                    <input type="text" id="email" name="email" required="">
+                </div>
+                <div class="form-grupo">
+                    <label for="textarea">Como puedo ayudarte?</label>
+                    <textarea name="textarea" id="textarea" rows="10" cols="50" required="">          </textarea>
+                </div>
+                <button class="form-submit-btn" type="submit">Enviar</button>
+            </form>
+        </section>
+
+    </footer>
+
     <script type="module" src="./src/assets/js/main.js"></script>
-    
+
 </body>
+
 </html>
