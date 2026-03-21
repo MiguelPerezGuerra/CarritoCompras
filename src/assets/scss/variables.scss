@@ -7,6 +7,7 @@
     --font-family-montserrat: 'Montserrat', sans-serif;
     --font-family-roboto: 'Roboto', sans-serif;
     // -- size
+    --font-size-xsmall: .75rem;
     --font-size-small: .875rem;
     --font-size-medium: 1rem;
     --font-size-large: 1.25rem;
@@ -23,7 +24,9 @@
     /* --- Colores ---*/
     --color-negro: #000000;
     --color-blanco: #fff; 
-    --color-gris-claro: #f2f2f2;
-    --color-gris-oscuro: #f7f7f7;
+    --color-gris-claro: #f7f7f7;
+    --color-gris-tenue: #dbdbdb;
+    --color-gris-oscuro: #aca9a9;
+    --color-gris-profundo: #575757;
 
 }

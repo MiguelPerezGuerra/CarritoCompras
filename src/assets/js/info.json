@@ -1,0 +1,62 @@
+[
+  {
+    "nombre": "Terrace Martin & Kenyon Dixon - Come As You Are (VINYL)",
+    "precio": "$30.00",
+    "estado": "PRE-ORDER", 
+    "imagen": "./src/assets/img/img_vinilos/vinyl1.avif"
+  },
+  {
+    "nombre": "The Roots - The Roots Come Alive Too: DYWM30 Live at Blue Note NYC! (Black Vinyl)",
+    "precio": "$32.00 (antes $40.00)",
+    "estado": "ON SALE", 
+    "imagen": "./src/assets/img/img_vinilos/vinyl1.avif"
+  },
+  {
+    "nombre": "Zhamira - Curita Para El Corazón Vinyl",
+    "precio": "$28.00",
+    "estado": "PRE-ORDER", 
+    "imagen": "./src/assets/img/img_vinilos/vinyl1.avif"
+  },
+  {
+    "nombre": "BLK ODYSSY - MOOD CONTROL Vinyl",
+    "precio": "$30.00",
+    "estado": "PRE-ORDER", 
+    "imagen": "./src/assets/img/img_vinilos/vinyl1.avif"
+  },
+  {
+    "nombre": "The Roots - The Roots Come Alive Too: DYWM30 Live at Blue Note NYC! (D2C EXCLUSIVE VINYL)",
+    "precio": "$45.00",
+    "estado": "", 
+    "imagen": "./src/assets/img/img_vinilos/vinyl1.avif"
+  },
+  {
+    "nombre": "Niko Moon - American Palm (Deluxe) (Vinyl)",
+    "precio": "$27.98",
+    "estado": "PRE-ORDER", 
+    "imagen": "./src/assets/img/img_vinilos/vinyl1.avif"
+  },
+  {
+    "nombre": "DESTIN CONRAD - wHIMSY (Glittery Green Vinyl)",
+    "precio": "$40.00",
+    "estado": "", 
+    "imagen": "./src/assets/img/img_vinilos/vinyl1.avif"
+  },
+  {
+    "nombre": "BNXN - Captain (Red Marbled Vinyl)",
+    "precio": "$34.98",
+    "estado": "PRE-ORDER", 
+    "imagen": "./src/assets/img/img_vinilos/vinyl1.avif"
+  },
+  {
+    "nombre": "Maurice Mobetta Brown - Betta Days (VINYL)",
+    "precio": "$30.00",
+    "estado": "", 
+    "imagen": "./src/assets/img/img_vinilos/vinyl1.avif"
+  },
+  {
+    "nombre": "XXXTentacion - 17 (Zoetrope Picture Disc Vinyl)",
+    "precio": "$30.00",
+    "estado": "", 
+    "imagen": "./src/assets/img/img_vinilos/vinyl1.avif"
+  }
+]
