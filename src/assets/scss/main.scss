@@ -90,7 +90,6 @@
         align-items: center;
         padding-left: 1.25rem;
         margin-top: 1rem;
-        position: relative;
 
         .nav__toggle {
             display: block;
@@ -281,7 +280,8 @@
 
 .main-contenedor {
     width: 100%;
-    margin: 4rem 0 0 1rem;
+    margin-top: 1rem;
+    padding-left: 1rem;
 
     .encabezado {
         font-family: var(--font-family-montserrat);
@@ -292,7 +292,7 @@
     }
 
     .tienda-contenedor {
-        width: 100%;
+        width: 95%;
         height: auto;
 
         .tienda-data {
@@ -311,11 +311,11 @@
         }
 
         .tienda-productos {
+            width: 100%;
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+            grid-template-columns: repeat(auto-fit, 15rem);
             gap: 1.25rem;
-            padding: 1.25rem;
-            align-items: center;
+            padding: 1.25rem 1.25rem 1.25rem 0;
             justify-content: center;
 
             .card {
@@ -324,9 +324,11 @@
                 overflow: hidden;
                 cursor: pointer;
                 border-radius: .5rem;
-                        background-color: var(--color-gris-claro);
+                background-color: var(--color-gris-claro);
 
                 .card-contenedor {
+                    min-height: 380px;
+                    max-height: 400px;
                     display: flex;
                     flex-direction: column;
                     border-radius: .5rem;
@@ -397,7 +399,7 @@
                     .button-primario {
                         text-decoration: none;
                         margin: 1rem auto;
-                        margin-top: .25rem;
+                        margin-top: auto;
                         font-family: var(--font-family-montserrat);
                         font-size: var(--font-size-medium);
                         padding: .4rem .7rem;
@@ -464,25 +466,29 @@
     }
 
     .tienda-productos {
-        grid-template-columns: repeat(auto-fit, minmax(12rem, 1fr));
-        padding: 1rem;
+        grid-template-columns: repeat(auto-fit, 12rem);
+        padding: 1rem 1rem 1rem 0;
+        justify-content: center;
     }
 }
 
 @media (max-width: 480px) {
     .tienda-productos {
-        grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
+        grid-template-columns: repeat(auto-fit, 10rem);
         gap: 1rem;
-        padding: 0.5rem;
+        padding: 0.5rem 0.5rem 0.5rem 0;
+        justify-content: center;
     }
 }
 
-.footer{
-    .logo-principal__img{
+.footer {
+    width: 90%;
+
+    .logo-principal__img {
         width: 40px;
     }
 
-    .form-contenedor{
+    .form-contenedor {
         width: 50%;
     }
 }

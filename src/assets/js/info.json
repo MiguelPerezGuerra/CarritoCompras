@@ -3,60 +3,70 @@
     "nombre": "Terrace Martin & Kenyon Dixon - Come As You Are (VINYL)",
     "precio": "$30.00",
     "estado": "PRE-ORDER", 
-    "imagen": "./src/assets/img/img_vinilos/vinyl1.avif"
+    "imagen": "./src/assets/img/img_vinilos/vinyl2.avif",
+    "id": 2
   },
   {
     "nombre": "The Roots - The Roots Come Alive Too: DYWM30 Live at Blue Note NYC! (Black Vinyl)",
-    "precio": "$32.00 (antes $40.00)",
+    "precio": "$32.00",
     "estado": "ON SALE", 
-    "imagen": "./src/assets/img/img_vinilos/vinyl1.avif"
+    "imagen": "./src/assets/img/img_vinilos/vinyl3.avif",
+    "id": 3
   },
   {
     "nombre": "Zhamira - Curita Para El Corazón Vinyl",
     "precio": "$28.00",
     "estado": "PRE-ORDER", 
-    "imagen": "./src/assets/img/img_vinilos/vinyl1.avif"
+    "imagen": "./src/assets/img/img_vinilos/vinyl4.avif",
+    "id": 4
   },
   {
     "nombre": "BLK ODYSSY - MOOD CONTROL Vinyl",
     "precio": "$30.00",
     "estado": "PRE-ORDER", 
-    "imagen": "./src/assets/img/img_vinilos/vinyl1.avif"
+    "imagen": "./src/assets/img/img_vinilos/vinyl5.avif",
+    "id": 5
   },
   {
     "nombre": "The Roots - The Roots Come Alive Too: DYWM30 Live at Blue Note NYC! (D2C EXCLUSIVE VINYL)",
     "precio": "$45.00",
     "estado": "", 
-    "imagen": "./src/assets/img/img_vinilos/vinyl1.avif"
+    "imagen": "./src/assets/img/img_vinilos/vinyl6.avif",
+    "id": 6
   },
   {
     "nombre": "Niko Moon - American Palm (Deluxe) (Vinyl)",
     "precio": "$27.98",
     "estado": "PRE-ORDER", 
-    "imagen": "./src/assets/img/img_vinilos/vinyl1.avif"
+    "imagen": "./src/assets/img/img_vinilos/vinyl7.avif",
+    "id": 7
   },
   {
     "nombre": "DESTIN CONRAD - wHIMSY (Glittery Green Vinyl)",
     "precio": "$40.00",
     "estado": "", 
-    "imagen": "./src/assets/img/img_vinilos/vinyl1.avif"
+    "imagen": "./src/assets/img/img_vinilos/vinyl8.avif",
+    "id": 8
   },
   {
     "nombre": "BNXN - Captain (Red Marbled Vinyl)",
     "precio": "$34.98",
     "estado": "PRE-ORDER", 
-    "imagen": "./src/assets/img/img_vinilos/vinyl1.avif"
+    "imagen": "./src/assets/img/img_vinilos/vinyl9.avif",
+    "id": 9
   },
   {
     "nombre": "Maurice Mobetta Brown - Betta Days (VINYL)",
     "precio": "$30.00",
     "estado": "", 
-    "imagen": "./src/assets/img/img_vinilos/vinyl1.avif"
+    "imagen": "./src/assets/img/img_vinilos/vinyl1.avif",
+    "id": 10
   },
   {
     "nombre": "XXXTentacion - 17 (Zoetrope Picture Disc Vinyl)",
     "precio": "$30.00",
     "estado": "", 
-    "imagen": "./src/assets/img/img_vinilos/vinyl1.avif"
+    "imagen": "./src/assets/img/img_vinilos/vinyl2.avif",
+    "id": 11
   }
 ]
