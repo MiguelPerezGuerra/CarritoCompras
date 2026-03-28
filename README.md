@@ -6,7 +6,7 @@ Tienda de vinilos **100% frontend**: catálogo responsive, carrito interactivo y
 
 | Campo | Valor |
 |--------|--------|
-| **URL del proyecto** | https://carritocompraspract.netlify.app/[https://carrito-compra.netlify.app](https://carrito-compra.netlify.app) |
+| **URL del proyecto** | [https://carrito-compra.netlify.app](https://carrito-compra.netlify.app) |
 
 ---
 
