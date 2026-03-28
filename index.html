@@ -4,7 +4,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Proyecto personal de una tienda de vinilos con HTML, CSS y JavaScript.">
+    <meta name="description" content="Tienda online de vinilos independiente: descubre, añade a carrito y compra con UI accesible y responsive.">
+    <meta name="robots" content="index, follow">
+    <meta name="keywords" content="vinilos, tienda de vinilos, música, ecommerce, carrito, tienda online">
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.css">
     <link rel="stylesheet" href="/src/assets/css/main.css">
     <link rel="shortcut icon" href="./src/assets/img/Logo.ico" type="image/x-icon">
@@ -16,40 +21,40 @@
     <header class="header">
 
         <section class="banner" id="banner">
-            <div class="banner-contenedor" id="banner-contenedor">
-                <div class="banner-logo original">
-                    <img class="banner-img" src="./src/assets/img/Logo_Blanco.png" alt="Logo Empire Blanco">
-                    <p class="banner-texto">100<span>%</span>INDEPENDIENTE</p>
+            <div class="banner__contenedor" id="banner__contenedor">
+                <div class="banner__logo original">
+                    <img class="banner__img" src="./src/assets/img/Logo_Blanco.png" alt="Logo Empire Blanco">
+                    <p class="banner__texto">100<span>%</span>INDEPENDIENTE</p>
                 </div>
             </div>
         </section>
 
         <!-- Menú principal con botón de toggle -->
         <nav class="nav" aria-label="Menú principal">
-            <button class="nav__toggle" aria-expanded="false" aria-controls="nav-list">
+            <button class="nav__toggle" aria-expanded="false" aria-controls="nav-list" aria-label="Abrir/cerrar menú principal">
                 <span aria-hidden="true" class="nav__close activo">Cerrar</span>
                 <span class="nav__activo">Menú</span>
             </button>
 
-            <ul class="nav__list activo" id="nav-list">
+            <ul class="nav__list activo" id="nav-list" role="menu">
                 <li class="nav__item"><a href="#">Home</a></li>
                 <li class="nav__item"><a href="#">Shop</a></li>
-                <li class="nav__item"><a href="#">Contact</a></li>
+                <li class="nav__item"><a href="#contact">Contact</a></li>
             </ul>
         </nav>
 
         <!-- Logo -->
-        <section class="logo-principal">
-            <img class="logo-principal__img" src="./src/assets/img/Logo_Negro.png" alt="Logo Empire Blanco">
-            <p class="logo-principal__text">EMPIRE</p>
+        <section class="logo logo--principal">
+            <img class="logo__img" src="./src/assets/img/Logo_Negro.png" alt="Logo Empire Blanco">
+            <p class="logo__text">EMPIRE</p>
         </section>
 
-        <section class="menu-carrito">
-            <div class="carrito-contenedor">
-                <i class="ri-shopping-bag-line"></i>
-                <span class="carrito-cantidad">0</span>
+        <section class="carrito" aria-label="Carrito de compras">
+            <div class="carrito__trigger" role="button" aria-label="Abrir/cerrar carrito" aria-expanded="false" tabindex="0">
+                <i class="ri-shopping-bag-line" aria-hidden="true"></i>
+                <span class="carrito__cantidad" aria-live="polite">0</span>
             </div>
-            <div id="carrito" >
+            <div id="carrito" role="dialog" aria-modal="false" aria-labelledby="carrito-title" hidden>
                 <table id="lista-carrito">
                     <thead>
                         <tr>
@@ -69,14 +74,14 @@
 
     </header>
 
-    <main class="main-contenedor">
+    <main class="main">
         <h1 class="encabezado">Shop Vinyl</h1>
-        <section class="tienda-contenedor">
-            <div class="tienda-data">
-                <p class="data-tipo">Shop Music / </p>
-                <span class="data-categoria">vinyl</span>
+        <section class="tienda">
+            <div class="tienda__data">
+                <p class="tienda__tipo">Shop Music / </p>
+                <span class="tienda__categoria">vinyl</span>
             </div>
-            <section class="tienda-productos">
+            <section class="tienda__productos">
                 <article class="card">
                     <div class="card-contenedor">
                         <div class="card-titulo">
@@ -102,11 +107,11 @@
 
     <footer class="footer">
         <section class="footer-social">
-            <div class="logo-principal">
-                <img class="logo-principal__img" src="./src/assets/img/Logo_Blanco.png" alt="Logo Empire Blanco">
-                <p class="logo-principal__text">EMPIRE</p>
+            <div class="logo logo--principal">
+                <img class="logo__img" src="./src/assets/img/Logo_Blanco.png" alt="Logo Empire Blanco">
+                <p class="logo__text">EMPIRE</p>
             </div>
-            <div class="footer-social__icons">
+            <div id="contact" class="footer-social__icons">
                 <p>Conctactame</p>
                 <a href="https://github.com/MiguelPerezGuerra" target="_blank" rel="noopener noreferrer"><i
                         class="ri-github-fill"></i></a>

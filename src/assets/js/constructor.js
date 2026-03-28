@@ -1,4 +1,4 @@
-const contenedor = document.querySelector(".tienda-productos");
+const contenedor = document.querySelector(".tienda__productos");
 
 async function cargarProductos() {
     try {
@@ -51,6 +51,8 @@ function dibujarProductos(productos) {
         const img = document.createElement('img');
         img.classList.add('card-img__producto');
         img.setAttribute('src', producto.imagen);
+        img.setAttribute('alt', producto.nombre || 'Vinilo');
+        img.setAttribute('loading', 'lazy');
         cardImg.appendChild(img);
 
         const cardInfo = document.createElement('div');
