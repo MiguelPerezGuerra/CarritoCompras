@@ -8,17 +8,13 @@ Tienda de vinilos **100% frontend**: catálogo responsive, carrito interactivo y
 |--------|--------|
 | **URL del proyecto** | [https://carrito-compra.netlify.app](https://carrito-compra.netlify.app) |
 
-Sustituye el enlace y el texto de la tabla por la URL real que te asigne Netlify al publicar el sitio (por ejemplo `https://tu-sitio-123.netlify.app` o un dominio personalizado).
-
 ---
 
 ## Capturas
 
-Las imágenes viven en [`src/assets/img/capturas/`](src/assets/img/capturas/). Si tus archivos tienen otro nombre o usas `.jpg`, renómbralos o ajusta las rutas para que coincidan.
-
 | Catálogo (escritorio, menú horizontal) | Catálogo (móvil) | Panel del carrito |
 |:---:|:---:|:---:|
-| ![Vista escritorio — grid de vinilos Shop Vinyl](src/assets/img/capturas/catalogo-escritorio.png) | ![Vista móvil — tienda y menú](src/assets/img/capturas/catalogo-movil.png) | ![Panel del carrito con líneas y vaciar carrito](src/assets/img/capturas/carrito.png) |
+| ![Vista escritorio — grid de vinilos Shop Vinyl](src/assets/img/capturas/shop-vinyl.png) | ![Vista móvil — tienda y menú](src/assets/img/capturas/shop-vinyl-mobile.png) | ![Panel del carrito con líneas y vaciar carrito](src/assets/img/capturas/shop-vinyl-cart.png) |
 
 ---
 
