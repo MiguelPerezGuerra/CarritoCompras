@@ -640,10 +640,12 @@
         .tienda__productos {
             width: 100%;
             display: grid;
-            grid-template-columns: repeat(auto-fit, 15rem);
+            // Columnas fluidas para evitar cards "aplastadas" en ciertos anchos
+            grid-template-columns: repeat(auto-fit, minmax(clamp(10.5rem, 35vw, 15rem), 1fr));
             gap: 1.25rem;
             padding: 1.25rem 1.25rem 1.25rem 0;
             justify-content: center;
+            align-items: stretch;
 
             .card {
                 width: 100%;
@@ -652,10 +654,12 @@
                 cursor: pointer;
                 border-radius: .5rem;
                 background-color: var(--color-gris-claro);
+                display: flex;
 
                 .card-contenedor {
-                    min-height: 380px;
-                    max-height: 400px;
+                    width: 100%;
+                    height: 100%;
+                    min-height: clamp(19rem, 55vw, 24rem);
                     display: flex;
                     flex-direction: column;
                     border-radius: .5rem;
@@ -714,6 +718,12 @@
                             width: 100%;
                             font-size: var(--font-size-small);
                             font-family: var(--font-family-roboto);
+                            display: -webkit-box;
+                            -webkit-line-clamp: 2;
+                            line-clamp: 2;
+                            -webkit-box-orient: vertical;
+                            overflow: hidden;
+                            min-height: calc(var(--font-size-small) * 2.6);
                         }
 
                         .card-info__precio {
@@ -791,19 +801,33 @@
         padding-left: 1rem;
     }
 
-    .tienda__productos {
-        grid-template-columns: repeat(auto-fit, 12rem);
+    .main .tienda .tienda__productos {
+        grid-template-columns: repeat(auto-fit, minmax(11rem, 1fr));
         padding: 1rem 1rem 1rem 0;
         justify-content: center;
+
+        .card .card-contenedor {
+            min-height: clamp(18rem, 70vw, 20rem);
+        }
     }
 }
 
 @media (max-width: 480px) {
-    .tienda__productos {
-        grid-template-columns: repeat(auto-fit, 10rem);
+    .main .tienda .tienda__productos {
+        grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
         gap: 1rem;
         padding: 0.5rem 0.5rem 0.5rem 0;
         justify-content: center;
+
+        .card {
+            .card-contenedor {
+                min-height: clamp(17rem, 85vw, 19rem);
+            }
+
+            .card-img {
+                margin-top: -1.75rem;
+            }
+        }
     }
 }
 
